@@ -12,10 +12,12 @@
 #include <stdio.h>
 
 /**
- * 
- *
- *
- *
+ * Le main éxecute 5 commandes shell une à la suite de  
+ * l'autre avec la fonction system.
+ * 3 de ces commandes sont pour envoyer différent processus (1,3 et 5)
+ * Et 2 de ces commandes sont pour faire attendre/dormir le programme
+ * soit pendant 10 secondes soit pendant 5 secondes.
+ * Suivi d'un affichage pour dire que le tout est terminé.
  * @return     0 
  */
 int main() {
