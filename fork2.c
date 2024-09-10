@@ -42,10 +42,22 @@ int main()
     pid_t pid;
     pid = fork();
 
+    
+
+if(pid == 0)
+{
     // Appel fonction Enfant
-
-
+    codeDuProcessusEnfant(); 
+}
+else  
+{
     // Appel fonction Parent
+    codeDuProcessusParent();
+    wait(NULL);
+}
+return 0;
+
+   
 
     
     return 0;
